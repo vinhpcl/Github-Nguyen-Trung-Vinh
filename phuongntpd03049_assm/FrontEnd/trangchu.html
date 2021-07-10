@@ -1,0 +1,16 @@
+<div  dir-paginate="sub in list_sj|itemsPerPage:4">
+    <div class="col-sm-6" >
+        <div class="panel panel-info">
+            <div class="panel-body" style="text-align: center;">
+                <img src="/images/logos/{{sub.Logo}}" />
+            </div>
+            <a href="#quiz/{{sub.Id}}/{{sub.Name}}">
+            <div class="panel-footer" style="text-align: center;font-size: 12px;">{{sub.Name}}</div>
+            </a>
+        </div>
+    </div>
+</div><br>
+<div class="row-sm" style="text-align: center;">
+    <dir-pagination-controls max-size="5" direction-links="true" boundary-links="true">
+    </dir-pagination-controls>
+</div>

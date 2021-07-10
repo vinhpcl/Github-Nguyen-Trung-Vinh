@@ -1,0 +1,26 @@
+
+
+<div class="panel-group " id="accordion">
+    <style>
+        #accordion .panel-heading {
+            cursor: pointer;
+        }
+    </style>
+
+    <div class="panel panel-info">
+        <div class="panel-heading" role="tab">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                <span class="glyphicon glyphicon-list-alt"></span>
+                <strong>DANH MỤC MÔN HỌC</strong>
+            </a>
+        </div>
+        <div id="collapseOne" class="dm list-group panel-collapse collapse in" role="tabpanel" ng-controller="sjctrl">
+            <div ng-repeat="sub in list_sj">
+
+                <a href="#quiz/{{sub.Id}}/{{sub.Name}}" class="list-group-item">{{sub.Name}}</a>
+
+            </div>
+        </div>
+    </div>
+
+</div>

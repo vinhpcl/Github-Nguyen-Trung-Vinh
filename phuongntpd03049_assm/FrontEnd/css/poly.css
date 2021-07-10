@@ -1,0 +1,95 @@
+body{
+    height: auto;
+}
+header{
+    width: 100%;
+    height: auto;
+}
+header img{
+    width: 100%;
+}
+.dropdown-item{
+    font-size: 12px;
+}
+nav{
+    background-color: #c1e5ff;
+ }
+
+ .dm{
+     height:550px ;
+     overflow: auto;
+ }
+footer{
+    text-align: center;
+    background-color: #c1e5ff;
+    color: white;
+}
+
+.login{
+   height: auto;
+    margin-top: 50px;
+    margin-left: 33%;
+    font-size: 16px;
+    
+}
+.login h1{
+    text-align: center;
+}
+.login form{
+    border: 1px solid lightgray;
+    border-radius: 3%;
+    padding: 20px 10% ; 
+    background-color: rgb(240, 240, 240);
+}
+.register{
+    height: auto;
+    margin-top: 50px;
+    margin-left: 25%;
+    font-size: 16px;
+}
+.register h1{
+    text-align: center;
+    color: blue;
+}
+.register form{
+    border: 1px solid lightgray;
+    border-radius: 3%;
+    padding: 20px 5% ; 
+} 
+
+.register .form-control{
+    border-style: none ; 
+    border-bottom: 1px solid lightgray;
+}
+.repass{
+    height: auto;
+     margin-top: 40px;
+     margin-left: 37%;
+     font-size: 16px;
+     
+ }
+ .repass h2{
+     text-align: center;
+ }
+ .repass form{
+     border: 1px solid lightgray;
+     border-radius: 3%;
+     padding: 20px 10% ; 
+     background-color: rgb(240, 240, 240);
+ }
+ .forgotpass{
+    height: auto;
+     margin-top: 40px;
+     margin-left: 33%;
+     font-size: 16px;
+     
+ }
+ .forgotpass h1{
+     text-align: center;
+ }
+ .forgotpass form{
+     border: 1px solid lightgray;
+     border-radius: 3%;
+     padding: 20px 10% ; 
+     background-color: rgb(240, 240, 240);
+ }

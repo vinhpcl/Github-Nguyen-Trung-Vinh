@@ -1,0 +1,35 @@
+
+    <div class="col-sm-6 col-sm-offset-3 panel panel-info" >
+        <form name="form" onSubmit="return checkPw(this)">
+            <h2>Đổi mật khẩu</h2><br>
+            <div class="form-group ">
+                <input type="password" class="form-control" id="newpw" minlength="6" maxlength="30"
+                    placeholder="Nhập mật khẩu mới" required/>
+            </div>
+            <div class="form-group ">
+                <input type="password" class="form-control" id="renewpw"  minlength="6" maxlength="30"
+                    placeholder="Nhập lại mật khẩu mới" required/>
+            </div>
+            <br>
+            <div class="form-group " style="text-align: center;">
+                <button type="submit" class="btn btn-primary "><b>Đổi mật khẩu</b></button>
+                
+            </div>
+        </form>
+    </div>
+    <script>
+        function checkPw(form) {
+            newpw = form.newpw.value;
+            renewpw = form.renewpw.value;
+
+            if (newpw != renewpw) {
+                alert("Nhập mật khẩu không trùng nhau!");
+                return false;
+            }
+            else {
+                alert("Đổi mất khẩu mới thành công!")
+                return true;
+            }
+        }
+    </script>
+

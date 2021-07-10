@@ -1,0 +1,54 @@
+<div class="panel panel-info ">
+    <div class="panel-heading">
+        <h3 style="color: red;">THÔNG TIN GÓP Ý</h3>
+    </div>
+    <div class="panel-body">
+        <form name="formgy" onSubmit="return checkform(this)">
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label>Họ và tên:</label>
+                    <input type="text" class="form-control" name="hten" required>
+                    <span ng-show="formgy.hten.$invalid">Vui lòng nhập tên vào trường này!</span>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label>Số điện thoại:</label>
+                    <input type="text" class="form-control" name="phone">
+                    <span ng-show="formgy.phone.$invalid">Vui lòng nhập số điện thoại vào trường này!</span>
+                </div>
+
+            </div>
+            <div class="form-group col-sm-12">
+                <label>Chủ đề:</label>
+                <input type="text" class="form-control" name="title">
+                <span ng-show="formgy.title.$invalid">Vui lòng nhập chủ đề vào trường này!</span>
+            </div>
+            <div class="form-group col-sm-12">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email">
+                <span ng-show="formgy.email.$invalid">Sai định dạng email!</span>
+            </div>
+            <div class="form-group col-sm-12">
+                <label>Nội dung:</label>
+                <textarea class="form-control" cols="20" name="body">
+
+            </textarea>
+                <span ng-show="formgy.body.$invalid">Vui lòng nhập nội dung vào trường này!</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Gửi góp ý</button>
+        </form>
+    </div>
+</div>
+<script>
+    function checkform(form) {
+
+        if (form.invalue) {
+            alert("Hãy nhập đầy đủ!");
+            return false;
+        }
+        else {
+            alert("Gửi thành công!\n Xin cảm ơn")
+            return true;
+        }
+    }
+</script>
